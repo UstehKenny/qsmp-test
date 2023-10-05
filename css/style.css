@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Press+Start+2P&display=swap');
+
+/* ----- GENERAL STYLES ----- */
+body{
+    width: 100vw;
+}
+
+.qsmp--lato{
+    font-family: 'Lato', sans-serif;
+}
+
+.qsmp--press{
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+/* ----- HEADER STYLES ----- */
+.qsmp__header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px 115px;
+    background-image: url("../img/header.png");
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.qsmp__ad__msj{
+    padding: 14px 0px;
+    font-size: 12px;
+}
+
+.qsmp__button{
+    border: none;
+    background: #4FC00E;
+    border-bottom: 4pt solid #499F12;
+    font-size: 9px;
+    padding: 18px;
+    color: white;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.qsmp__counter{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.digits{
+    display: flex;
+    flex-direction: column;
+}
+
+.qsmp__counter__digits{
+    display: flex;
+}
+
+.digit{
+    margin: 0 5px;
+    border: 2px solid #2A2840;
+    background: #33314B;
+    font-size: 22px;
+    width: 40px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colon{
+    padding: 20px 0px;
+}
+/* ----- MAIN STYLES ----- */
+.qsmp__main{
+    padding: 5% 3%;
+}
+
+.qsmp__title{
+    padding: 0 4%;
+}
+
+.qsmp__creators{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.qsmp__live{
+    position: relative;
+    padding: 10px;
+    top: 38px;
+    left: 15px;
+    z-index: 1;
+    background: #ED2E28;
+    color: white;
+    width: 30px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 5px;
+}
+
+.qsmp__creator__img > img{
+    width: 250px;
+}
+.qsmp__creator__info, .qsmp__creator__buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 22px;
+}
+
+.qsmp__name{
+    font-size: 20px;
+}
+.qsmp__creator__info > img{
+    width: 35px;
+}
+.qsmp--snow{
+    background: #F6F5F5;
+}
+.qsmp__button--gray{
+    border: none;
+    background: #1F1E32;
+    border-bottom: 4pt solid #000000;
+    color: white;
+    width: 36px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.no-live{
+    background: transparent;
+    color: transparent;
+}
+/* ----- FOOTER STYLES ----- */
+.qsmp__footer{
+    background-image: url("../img/footer.png");
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+    display: flex;
+    padding: 100px 150px 2px;
+}
+
+.qsmp__footer__info{
+    line-height: 30px;
+    width: 70%;
+}
+.qsmp__footer__buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 70%;
+}
+
+.qsmp__social{
+    border: none;
+    background: #FFFFFF;
+    border-bottom: 4pt solid #E8E8E7;
+    font-size: 7px;
+    padding: 15px;
+    line-height: 0;
+    cursor: pointer;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.qsmp__social > i{
+    font-size: 12px;
+    line-height: 0;
+}

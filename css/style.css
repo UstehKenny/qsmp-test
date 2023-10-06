@@ -144,6 +144,7 @@ body{
 }
 /* ----- FOOTER STYLES ----- */
 .qsmp__footer{
+    background: #FAE39B;
     background-image: url("../img/footer.png");
     background-size: 100vw auto;
     background-repeat: no-repeat;
@@ -280,6 +281,7 @@ body{
     .qsmp__footer{
         flex-direction: column;
         padding: 40px 55px 150px;
+        
     }
     .qsmp__footer__buttons{
         gap: 8px;

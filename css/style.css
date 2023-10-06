@@ -3,6 +3,7 @@
 /* ----- GENERAL STYLES ----- */
 body{
     width: 100vw;
+    overflow-y: auto;
 }
 
 .qsmp--lato{
@@ -39,7 +40,11 @@ body{
     line-height: 0;
     cursor: pointer;
 }
-
+.qsmp__button:active{
+    border: none;
+    background: #4FC00E;
+    border-bottom: 2pt solid #499F12;
+}
 .qsmp__counter{
     display: flex;
     justify-content: center;
@@ -83,6 +88,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .qsmp__live{
@@ -127,6 +133,11 @@ body{
     cursor: pointer;
 }
 
+.qsmp__button--gray:active{
+    background: #1F1E32;
+    border-bottom: 2pt solid #000000;
+}
+
 .no-live{
     background: transparent;
     color: transparent;
@@ -137,7 +148,7 @@ body{
     background-size: 100vw auto;
     background-repeat: no-repeat;
     display: flex;
-    padding: 100px 150px 2px;
+    padding: 100px 150px 0px;
 }
 
 .qsmp__footer__info{
@@ -166,7 +177,125 @@ body{
     vertical-align: middle;
 }
 
+.qsmp__social:active{
+    background: #FFFFFF;
+    border-bottom: 2pt solid #E8E8E7;
+}
+
 .qsmp__social > i{
     font-size: 12px;
     line-height: 0;
+}
+@media screen and (max-width:1024px){
+    .qsmp__header{
+        padding: 10px 114px;
+    }
+
+    .qsmp__footer{
+        padding: 60px 100px 150px;
+    }
+
+    .qsmp__footer__info{
+        font-size: 65%;
+        line-height: 14px;
+    }
+
+    .qsmp__social{
+        font-size: 6px;
+        height: 6px;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width:865px){
+    .qsmp__header{
+        padding: 3% 60px;
+    }
+
+    .qsmp__ad__msj{
+        font-size: 10%;
+    }
+
+    .qsmp__button{
+        font-size: 8%;
+        padding: 6%;
+    }
+
+    .digit{
+        font-size: 10px;
+        width: 20px;
+        height: 25px;
+    }
+    .colon{
+        padding: 10px 0;
+    }
+    
+    .date{
+        font-size: 10px;
+    }
+    .qsmp__creators{
+        flex-wrap: wrap;
+    }
+    .qsmp__footer{
+        padding: 40px 75px 150px;
+    }
+    .qsmp__footer__buttons{
+        gap: 8px;
+        width: 100%;
+    }
+    .qsmp__footer__info{
+        font-size: 65%;
+        line-height: 14px;
+    }
+
+    .qsmp__social{
+        font-size: 5px;
+        height: 6px;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width:414px){
+    .qsmp__header{
+        padding: 3% 60px;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .qsmp__ad{
+        display: flex;
+    }
+
+    .colon{
+        padding: 10px 0;
+        color: #2A2840;
+    }
+    
+    .date{
+        color: #2A2840;
+    }
+   
+    .qsmp__footer{
+        flex-direction: column;
+        padding: 40px 55px 150px;
+    }
+    .qsmp__footer__buttons{
+        gap: 8px;
+        width: 80vw;
+        justify-content: center;
+    }
+    .qsmp__footer__info{
+        width: 80vw;
+        font-size: 65%;
+        line-height: 14px;
+    }
+
+    .qsmp__social{
+        font-size: 5px;
+        height: 6px;
+        padding: 10px;
+    }
+
 }
